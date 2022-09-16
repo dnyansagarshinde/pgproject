@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>PG APP by KS</title>
+	<style>
+		* {font-size:40px;}
+		h1{background-color:black;color:white;width:50%;}
+		body{background-color:lightblue;}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Password Generator</h1>
+		<form action="{%   url  'show'  %}">
+			Select Password Length<select name="length">
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			</select>
+				<br/><br/>
+				<input type="checkbox" name="uc" value="uc">UpperCase</input>
+				<br/><br/>
+				<input type="checkbox" name="di" value="di">Digits</input>
+				<br/><br/>
+				<input type="submit" value="Generate Password"></input>
+		</form>
+	</center>
+</body>
+</html>
